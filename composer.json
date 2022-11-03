@@ -1,0 +1,31 @@
+{
+    "name": "todocoding/siret",
+    "description": "Consulter les numéros SIREN et SIRET depuis Laravel",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Todocoding\\Siret\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Yug Normand Ngangue Fosso",
+            "email": "yugnormandngangue@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+        "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Todocoding\\Siret\\InseeServiceProvider"
+            ],
+            "aliases": {
+                "Insee": "Todocoding\\Siret\\Facades\\Insee"
+            }
+        }
+    }
+}
