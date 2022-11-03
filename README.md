@@ -38,6 +38,8 @@ php artisan vendor:publish --provider="Todocoding\Siret\InseeServiceProvider" --
 Utilisez le `Insee` facade pour rechercher un numéro SIREN ou SIRET :
 
 ``` php
+use Todocoding\Siret\Facades\Insee;
+
 Insee::siren('840 745 111');
 Insee::siret('840 745 111 00012');
 ```
