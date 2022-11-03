@@ -8,6 +8,6 @@ class Insee extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'laravel-insee';
+        return 'siret';
     }
 }
